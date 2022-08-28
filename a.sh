@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "Enter Your VM Name:"
 read vmname
 az network vnet create \
@@ -10,7 +9,6 @@ az network vnet create \
  
  az vm create \
   --resource-group learn-d9acb93a-5c50-4323-8136-b427ef15a78c \
-  --size DS2_v2\
   --name $vmname \
   --image UbuntuLTS \
   --vnet-name $vmname"Net" \
