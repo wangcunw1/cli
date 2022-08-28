@@ -10,6 +10,7 @@ az network vnet create \
  
  az vm create \
   --resource-group learn-bc35e0aa-27ff-4078-bcba-9032fea619ea \
+  --size DS2_v2\
   --name $vmname \
   --image UbuntuLTS \
   --vnet-name $vmname"Net" \
