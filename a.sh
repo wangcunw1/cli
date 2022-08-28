@@ -3,13 +3,13 @@ echo "Enter Your VM Name:"
 read vmname
 az network vnet create \
   --name $vmname"Net" \
-  --resource-group learn-a240a501-f0a4-4ab1-aa3a-d7dbdff4af25 \
+  --resource-group learn-d9acb93a-5c50-4323-8136-b427ef15a78c \
   --address-prefixes 10.0.0.0/16 \
   --subnet-name $vmname"SubNet" \
   --subnet-prefixes 10.0.0.0/24
  
  az vm create \
-  --resource-group learn-a240a501-f0a4-4ab1-aa3a-d7dbdff4af25 \
+  --resource-group learn-d9acb93a-5c50-4323-8136-b427ef15a78c \
   --size DS2_v2\
   --name $vmname \
   --image UbuntuLTS \
